@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>2020雅絲蘭黛小棕瓶改版上市-粉絲輪廓</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <header class="header clb">
+        <div class="container">
+            <h1>
+                <a href="/"><img
+                        src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/F2-nhB_fino-logo.png"></a>
+                <span>Fino網紅平台</span>
+            </h1>
+            <nav id="site-navi">
+                <ul class="site-navi-list">
+                    <li>
+                        <a href="/providers">網紅搜尋</a>
+                    </li>
+                    <li>
+                        <a href="/providers">活動管理</a>
+                    </li>
+                    <li>
+                        <a href="/providers">網紅管理</a>
+                    </li>
+                    <li>
+                        <a href="/providers">成效分析</a>
+                    </li>
+            </nav>
+            <ul class="user-panel">
+                <li class="navi">
+                    <a class="ibtn">
+                        <img
+                            src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/FaaejN_ic_alert.png">
+                    </a>
+                </li>
+                <li class="navi">
+                    <a class="ibtn">
+                        <img
+                            src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/rcroLt_ic_help.png">
+                    </a>
+                </li>
+                <li class="navi">
+                    <div id="user-menu">
+                        <a class="u-p-c">
+                            <div class="photo bg"
+                                style="background-image: url('https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/ZRU5Us_kolimage.png');">
+                                &nbsp;<img
+                                    src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/ZRU5Us_kolimage.png">
+                            </div>
+                            <img class="idc"
+                                src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/rcroLt_ic_help.png">
+                        </a>
+
+                        <div class="drop-down-menu tooltip-top-right panel">
+                            <a class="hover-item" href="">
+                                <div>會員專區</div>
+                            </a>
+                            <a href="/auth/logout" class="hover-item">
+                                <div>登出</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="search-panel">
+            <div class="container">
+                <div class="title-box">
+                    <h2 class="title">2020雅絲蘭黛小棕瓶改版上市</h2>
+                    <div class="arrow">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="export-box">
+                    <img src="./public/img/ic_channeloverview.png" alt="">
+                    <p class="export">匯出</p>
+                    <div class="eb-cont option-box">
+                        <div class="option">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="op-text">全部</p>
+                        </div>
+                        <div class="option op-active">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="op-text">概觀</p>
+                        </div>
+                        <div class="option">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="op-text">網紅</p>
+                        </div>
+                        <div class="option">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="op-text">粉絲輪廓</p>
+                        </div>
+                        <div class="option">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="op-text">內容</p>
+                        </div>
+                        <div class="option">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="op-text">產業比較</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="file fi-active">
+                            <div class="check-box"></div>
+                            <p class="fi-text">PDF</p>
+                        </div>
+                        <div class="file">
+                            <div class="check-box"></div>
+                            <p class="fi-text">Excel</p>
+                        </div>
+                        <div class="btn-box">
+                            <button class="clear">清除</button>
+                            <span class="divide">|</span>
+                            <button><a href="#">確定</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="second-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">概觀</a></li>
+                <li><a href="#">網紅</a></li>
+                <li><a href="#" class="active">粉絲輪廓</a></li>
+                <li><a href="#">內容</a></li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">
+                        <img src="./public/img/icon_cp.png" alt="">
+                        <p>產業比較</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="filter-box">
+                <img src="./public/img/icon_cl.png" alt="">
+                <p>最近一個月</p>
+                <div class="arrow">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box top-box fans">
+            <div class="content sexandage">
+                <h4 class="small-title">性別/年紀</h4>
+                <div class="data-box">
+                    <canvas id="sex-data"></canvas>
+                    <div class="display-data">
+                        <p class="data-name">女</p>
+                        <p class="data-num">72%</p>
+                    </div>
+                </div>
+                <table class="source">
+                    <tr class="net">
+                        <td width="25%"></td>
+                        <td width="25%">
+                            <img src="./public/img/youtube.png" alt="">
+                        </td>
+                        <td width="25%">
+                            <img src="./public/img/logo_IG_channel.png" alt="">
+                        </td>
+                        <td width="25%">
+                            <img src="./public/img/logo_FB_channel.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="female-data sex-data">
+                        <td>
+                            <div class="color"></div>
+                            <p>女</p>
+                        </td>
+                        <td>122K</td>
+                        <td>89K</td>
+                        <td>36K</td>
+                    </tr>
+                    <tr class="male-data sex-data">
+                        <td>
+                            <div class="color"></div>
+                            <p>男</p>
+                        </td>
+                        <td>122K</td>
+                        <td>89K</td>
+                        <td>36K</td>
+                    </tr>
+                </table>
+                <div class="age">
+                    <div class="female-bar age-box">
+                        <div class="fb" style="height: 9%;">
+                            <p class="fe-num">3%</p>
+                        </div>
+                        <div class="fb" style="height: 54%;">
+                            <p class="fe-num">18%</p>
+                        </div>
+                        <div class="fb" style="height: 100%;">
+                            <p class="fe-num">35%</p>
+                        </div>
+                        <div class="fb" style="height: 30%;">
+                            <p class="fe-num">10%</p>
+                        </div>
+                        <div class="fb" style="height: 39%;">
+                            <p class="fe-num">13%</p>
+                        </div>
+                        <div class="fb" style="height: 15%;">
+                            <p class="fe-num">5%</p>
+                        </div>
+                        <div class="fb" style="height: 3%;">
+                            <p class="fe-num">1%</p>
+                        </div>
+                    </div>
+                    <ul class="age-range age-box">
+                        <li>13-17</li>
+                        <li>18-25</li>
+                        <li>26-34</li>
+                        <li>35-44</li>
+                        <li>45-54</li>
+                        <li>55-64</li>
+                        <li>65+</li>
+                    </ul>
+                    <div class="male-bar age-box">
+                        <div class="mb" style="height: 9%;">
+                            <p class="ma-num">3%</p>
+                        </div>
+                        <div class="mb" style="height: 54%;">
+                            <p class="ma-num">18%</p>
+                        </div>
+                        <div class="mb" style="height: 100%;">
+                            <p class="ma-num">35%</p>
+                        </div>
+                        <div class="mb" style="height: 30%;">
+                            <p class="ma-num">10%</p>
+                        </div>
+                        <div class="mb" style="height: 39%;">
+                            <p class="ma-num">13%</p>
+                        </div>
+                        <div class="mb" style="height: 15%;">
+                            <p class="ma-num">5%</p>
+                        </div>
+                        <div class="mb" style="height: 3%;">
+                            <p class="ma-num">1%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h4 class="small-title">消費力</h4>
+                <div class="consimption">
+                    <!-- <div class="line-bg">
+                        <div class="space"></div>
+                        <div class="line-box">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div> -->
+                    <div class="cons-data">
+                        <p class="grade">高</p>
+                        <div class="cons-box">
+                            <div class="cons-bar" style="width: 69%;">
+                                <p class="c-num">23%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cons-data">
+                        <p class="grade">中高</p>
+                        <div class="cons-box">
+                            <div class="cons-bar" style="width: 85%;">
+                                <p class="c-num">55%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cons-data">
+                        <p class="grade">中</p>
+                        <div class="cons-box">
+                            <div class="cons-bar" style="width: 24%;">
+                                <p class="c-num">12%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cons-data">
+                        <p class="grade">低</p>
+                        <div class="cons-box">
+                            <div class="cons-bar" style="width: 80%;">
+                                <p class="c-num">52%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divide-bar"></div>
+            <div class="content">
+                <h4 class="small-title">內容興趣</h4>
+                <table class="interest">
+                    <tr class=net>
+                        <td width="15%"></td>
+                        <td width="15%">
+                            <img src="./public/img/youtube.png" alt="">
+                        </td>
+                        <td width="15%">
+                            <img src="./public/img/logo_IG_channel.png" alt="">
+                        </td>
+                        <td width="15%">
+                            <img src="./public/img/logo_FB_channel.png" alt="">
+                        </td>
+                        <td width="40%"></td>
+                    </tr>
+                    <tr>
+                        <td class="subject">美妝</td>
+                        <td>68.2%</td>
+                        <td>73.5%</td>
+                        <td>87.4%</td>
+                        <td class="bar">
+                            <div class="interest-box">
+                                <div class="intr-bar" style="width: 33.6%;"></div>
+                            </div>
+                            <p class="intr-num">78.2%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">旅遊</td>
+                        <td>68.2%</td>
+                        <td>73.5%</td>
+                        <td>87.4%</td>
+                        <td class="bar">
+                            <div class="interest-box">
+                                <div class="intr-bar" style="width: 33.6%;"></div>
+                            </div>
+                            <p class="intr-num">54.7%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">親子</td>
+                        <td>68.2%</td>
+                        <td>73.5%</td>
+                        <td>87.4%</td>
+                        <td class="bar">
+                            <div class="interest-box">
+                                <div class="intr-bar" style="width: 33.6%;"></div>
+                            </div>
+                            <p class="intr-num">33.6%</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content">
+                <h4 class="small-title">品牌偏好</h4>
+            </div>
+            <div class="divide-bar"></div>
+            <div class="content">
+                <h4 class="small-title">網紅偏好</h4>
+                <div class="name-box red">
+                    <div class="f-pic">
+                        <img src="./public/img/KOLimage.png" alt="">
+                        <div class="net yt">YT</div>
+                    </div>
+                    <div class="f-text">
+                        <h5 class="f-name">艾莉莎莎Alisasa</h5>
+                        <h5 class="f-num">38%</h5>
+                        <div class="prog fp">
+                            <div class="prog-value" style="width: 38%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-box red">
+                    <div class="f-pic">
+                        <img src="./public/img/KOLimage.png" alt="">
+                        <div class="net yt">YT</div>
+                    </div>
+                    <div class="f-text">
+                        <h5 class="f-name">艾莉莎莎Alisasa</h5>
+                        <h5 class="f-num">38%</h5>
+                        <div class="prog fp">
+                            <div class="prog-value" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-box red">
+                    <div class="f-pic">
+                        <img src="./public/img/KOLimage.png" alt="">
+                        <div class="net ig">IG</div>
+                    </div>
+                    <div class="f-text">
+                        <h5 class="f-name">艾莉莎莎Alisasa</h5>
+                        <h5 class="f-num">38%</h5>
+                        <div class="prog fp">
+                            <div class="prog-value" style="width: 38%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-box red">
+                    <div class="f-pic">
+                        <img src="./public/img/KOLimage.png" alt="">
+                        <div class="net ig">IG</div>
+                    </div>
+                    <div class="f-text">
+                        <h5 class="f-name">艾莉莎莎Alisasa</h5>
+                        <h5 class="f-num">38%</h5>
+                        <div class="prog fp">
+                            <div class="prog-value" style="width: 38%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-box red">
+                    <div class="f-pic">
+                        <img src="./public/img/KOLimage.png" alt="">
+                        <div class="net fb">FB</div>
+                    </div>
+                    <div class="f-text">
+                        <h5 class="f-name">艾莉莎莎Alisasa</h5>
+                        <h5 class="f-num">38%</h5>
+                        <div class="prog fp">
+                            <div class="prog-value" style="width: 38%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>
+            FiNO © 2018 All Rights Reserved Terms of Use and Privacy Policy
+        </p>
+    </footer>
+
+    <!-- awesomefont CDN -->
+    <script src="https://kit.fontawesome.com/69fd600045.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- my JS CDN -->
+    <script src="public/js/index.js"></script>
+    <script src="public/js/doughnut.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
